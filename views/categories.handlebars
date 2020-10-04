@@ -1,0 +1,46 @@
+<div class="conteudo-box">
+    <div class="conteudo-boxInner">
+        <div class="create">
+        <a href="/users/createCategory"><h2>Create New Category <i class="fa fa-plus"></i></h2></a>
+      </div>
+  <table id="example" class="display" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Min Package</th>
+                <th>Max Package</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+              <th>Name</th>
+              <th>Min Package</th>
+              <th>Max Package</th>
+              <th>Actions</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Non Dream Category</td>
+                <td>Any</td>
+                <td>500000</td>
+                <td><button class="btn btn-primary">View</button>&nbsp;&nbsp;<button class="btn btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Dream Category </td>
+              <td>500000</td>
+              <td>Any</td>
+              <td><button class="btn btn-primary">View</button>&nbsp;&nbsp;<button class="btn btn-danger">Delete</button></td>
+            </tr>
+
+        </tbody>
+    </table>
+  </div>
+</div>
+<script>
+/* Custom filtering function which will search data in column four between two values */
+$(document).ready(function(){
+    $('#example').DataTable();
+});
+</script>
